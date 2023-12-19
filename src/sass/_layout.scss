@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 html {
 	font-size: 62.5%;
 	scroll-padding-top: 50px;
@@ -6,6 +8,7 @@ html {
 
 body {
 	position: relative;
+	background-color: $background-color;
 	font-size: 1.6rem;
 }
 
@@ -13,4 +16,3 @@ body {
 	margin: 0 auto;
 	width: min(100%, 1200px);
 }
-
