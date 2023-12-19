@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+	padding: 0 1em;
 	height: 80px;
 	background: $navy-blue;
 
@@ -25,5 +26,39 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		height: 100%;
+
+		.logo {
+			display: flex;
+			cursor: pointer;
+
+			&__icon {
+				width: 45px;
+				height: 45px;
+			}
+
+			&__box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				margin-left: 0.25em;
+
+				&-upper,
+				&-lower {
+					font-family: 'Raleway', sans-serif;
+					font-weight: bold;
+					color: $creme-white;
+				}
+
+				&-lower {
+					margin-top: 0.15em;
+				}
+			}
+		}
+
+		.hamburger {
+			
+		}
 	}
 }
