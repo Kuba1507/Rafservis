@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.header {
+		.wrapper {
+			.hamburger {
+				display: none;
+			}
+
+			.nav-bar {
+				&__list {
+					display: flex;
+
+					&-item {
+						margin: 0;
+
+						a {
+							display: block;
+							margin: 0 0.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

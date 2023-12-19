@@ -18,7 +18,6 @@ body {
 }
 
 .header {
-	padding: 0 1em;
 	height: 80px;
 	background: $navy-blue;
 
@@ -27,14 +26,17 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
+		padding: 0 1em;
 
 		.logo {
 			display: flex;
+			align-items: center;
 			cursor: pointer;
 
 			&__icon {
 				width: 45px;
 				height: 45px;
+				transition: transform 0.3s;
 			}
 
 			&__box {
@@ -57,8 +59,75 @@ body {
 			}
 		}
 
+		.logo:hover .logo__icon {
+			transform: scale(0.9);
+		}
+
 		.hamburger {
-			
+			display: block;
+			padding: 1em;
+			cursor: pointer;
+
+			.line {
+				margin: 6px 0;
+				height: 2px;
+				width: 35px;
+				background-color: $creme-white;
+			}
+		}
+
+		.nav-bar {
+			position: absolute;
+			top: 80px;
+			left: 0;
+			right: 0;
+			height: 0;
+			width: 100vw;
+			background-color: $navy-blue;
+			overflow: hidden;
+			transition: height 0.4s;
+
+			&__list {
+				display: block;
+				margin: 80px auto 0 auto;
+				width: fit-content;
+				text-align: center;
+				list-style-type: none;
+				opacity: 0;
+				transition: opacity 0.4s;
+
+				&-item {
+					margin: 2.5em 0;
+
+					a {
+						padding: 0.5em 1.25em;
+						font-family: 'Open Sans', sans-serif;
+						font-size: 1.7rem;
+						color: $creme-white;
+						border-radius: 50px;
+						text-decoration: none;
+						transition: color 0.3s, background-color 0.3s;
+
+						&:hover {
+							color: $navy-blue;
+							background-color: $cta-color;
+						}
+					}
+
+					.active {
+						color: $navy-blue;
+						background-color: $cta-color;
+					}
+				}
+			}
+
+			.show-list {
+				opacity: 1;
+			}
+		}
+
+		.show-nav {
+			height: 450px;
 		}
 	}
 }
