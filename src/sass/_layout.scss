@@ -16,3 +16,14 @@ body {
 	margin: 0 auto;
 	width: min(100%, 1200px);
 }
+
+.header {
+	height: 80px;
+	background: $navy-blue;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
