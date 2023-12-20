@@ -2,7 +2,7 @@
 	.header {
 		.wrapper {
 			.nav-bar {
-				top: 120px;
+				top: 80px;
 			}
 		}
 	}
@@ -106,11 +106,16 @@
 	}
 
 	main {
+		.section-title {
+			font-size: 2.6rem;
+		}
+
 		.aboutme {
 			.honors-box {
+				margin-top: 2em;
 				grid-template-columns: repeat(3, 1fr);
 				grid-template-rows: repeat(2, 1fr);
-				gap: 4em 3em;
+				gap: 6em 3em;
 
 				&__element {
 					&-title {
