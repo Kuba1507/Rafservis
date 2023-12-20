@@ -1,4 +1,18 @@
 @media (min-width: 768px) {
+	.help-box {
+		height: 40px;
+
+		.wrapper {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 0 1.5em;
+		}
+
+		&__lower {
+			margin-left: 1em;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -22,7 +36,7 @@
 					opacity: 1;
 
 					&-item {
-						margin: 0;
+						margin: auto 0;
 
 						a {
 							display: block;
