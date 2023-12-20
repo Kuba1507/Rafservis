@@ -202,14 +202,12 @@ body {
 	}
 
 	.heading-description {
-		// margin-bottom: 6em;
 		font-family: "Open Sans", sans-serif;
 		line-height: 1.5em;
 		text-align: center;
 	}
 
 	.cta-button {
-		// width: 60%;
 		margin-top: 2.5em;
 		padding: 0.7em 1.4em;
 		font-family: "Raleway", sans-serif;
@@ -218,7 +216,13 @@ body {
 		background-color: $cta-color;
 		border-radius: 8px;
 		border: none;
+		transition: background-color 0.2s, color 0.2s;
 		cursor: pointer;
+
+		&:hover {
+			background-color: $navy-blue;
+			color: $creme-white;
+		}
 	}
 
 	&__shadow {
