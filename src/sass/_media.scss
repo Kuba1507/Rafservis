@@ -9,8 +9,17 @@
 			}
 
 			.nav-bar {
+				position: static;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				height: 100%;
+				overflow: visible;
+
 				&__list {
 					display: flex;
+					margin: 0;
+					opacity: 1;
 
 					&-item {
 						margin: 0;
