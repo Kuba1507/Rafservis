@@ -1,4 +1,12 @@
 @media (min-width: 768px) {
+	.header {
+		.wrapper {
+			.nav-bar {
+				top: 120px;
+			}
+		}
+	}
+
 	.help-box {
 		height: 40px;
 
@@ -12,6 +20,10 @@
 		&__lower {
 			margin-left: 1em;
 		}
+	}
+
+	.hero-image {
+		padding: 2em 12em 1.5em 12em;
 	}
 }
 
@@ -45,6 +57,40 @@
 					}
 				}
 			}
+		}
+	}
+
+	.hero-image {
+		height: 525px;
+		align-items: center;
+		justify-content: flex-start;
+		background-position: 50% 70%;
+
+		.content-box {
+			align-items: flex-start;
+			height: 500px;
+			width: 70%;
+		}
+
+		.heading-title,
+		.heading-description {
+			text-align: left;
+		}
+
+		.heading-title {
+			width: 50%;
+			font-size: 4.5rem;
+		}
+
+		.heading-description {
+			width: 70%;
+			font-size: 1.7rem;
+		}
+
+		.cta-button {
+			margin-top: 5em;
+			padding: 0.8em 1.6em;
+			font-size: 1.7rem;
 		}
 	}
 }
