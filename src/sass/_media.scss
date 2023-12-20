@@ -25,6 +25,17 @@
 	.hero-image {
 		padding: 2em 12em 1.5em 12em;
 	}
+
+	main {
+		.aboutme {
+			padding-top: 3em;
+
+			.honors-box {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
