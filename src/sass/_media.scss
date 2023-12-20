@@ -68,7 +68,6 @@
 
 		.content-box {
 			align-items: flex-start;
-			height: 500px;
 			width: 70%;
 		}
 
@@ -78,13 +77,14 @@
 		}
 
 		.heading-title {
-			width: 60%;
+			width: 70%;
 			font-size: 5rem;
 		}
 
 		.heading-description {
 			width: 70%;
 			font-size: 1.7rem;
+			line-height: 1.7em;
 		}
 
 		.cta-button {
