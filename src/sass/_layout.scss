@@ -248,6 +248,31 @@ main {
 	.aboutme {
 		position: relative;
 		padding-top: 2em;
-		
+
+		.honors-box {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 3em;
+			margin-top: 0.5em;
+			padding: 2.5em;
+
+			&__element {
+				&-title,
+				&-description {
+					font-family: "Open Sans", sans-serif;
+					text-align: center;
+				}
+
+				&-title {
+					font-weight: 800;
+					font-size: 1.7rem;
+				}
+
+				&-description {
+					margin-top: 0.25em;
+					font-size: 1.4rem;
+				}
+			}
+		}
 	}
 }
