@@ -24,6 +24,13 @@ body {
 	color: $pure-white;
 }
 
+.section-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	color: $navy-blue;
+	text-align: center;
+}
+
 .help-box {
 	height: 50px;
 	background-color: $grey;
@@ -91,7 +98,7 @@ body {
 				&-upper,
 				&-lower {
 					font-family: "Raleway", sans-serif;
-					font-weight: bold;
+					font-weight: 600;
 					color: $creme-white;
 				}
 
@@ -189,12 +196,12 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		z-index: 2;
 	}
 
 	.heading-title,
 	.heading-description {
 		color: $creme-white;
+		z-index: 2;
 	}
 
 	.heading-title {
@@ -217,6 +224,7 @@ body {
 		border-radius: 8px;
 		border: none;
 		transition: background-color 0.2s, color 0.2s;
+		z-index: 2;
 		cursor: pointer;
 
 		&:hover {
@@ -233,5 +241,13 @@ body {
 		left: 0;
 		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 1;
+	}
+}
+
+main {
+	.aboutme {
+		position: relative;
+		padding-top: 2em;
+		
 	}
 }
