@@ -104,4 +104,38 @@
 			font-size: 1.7rem;
 		}
 	}
+
+	main {
+		.aboutme {
+			.honors-box {
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+				gap: 4em 3em;
+
+				&__element {
+					&-title {
+						&--left {
+							text-align: left;
+						}
+
+						&--right {
+							text-align: right;
+						}
+					}
+
+					&-description {
+						font-size: 1.5rem;
+
+						&--left {
+							text-align: left;
+						}
+
+						&--right {
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
 }
