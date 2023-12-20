@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector('.hamburger')
 const navbar = document.querySelector('.nav-bar')
 const navItemsList = document.querySelector('.nav-bar__list')
+const header = document.querySelector('.header')
 
 const handleNav = () => {
 	navbar.classList.toggle('show-nav')
@@ -8,3 +9,4 @@ const handleNav = () => {
 }
 
 burgerBtn.addEventListener('click', handleNav)
+
