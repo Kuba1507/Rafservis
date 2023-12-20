@@ -17,6 +17,13 @@ body {
 	width: min(100%, 1200px);
 }
 
+.heading-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	text-align: center;
+	color: $pure-white;
+}
+
 .help-box {
 	height: 50px;
 	background-color: $grey;
@@ -33,7 +40,7 @@ body {
 	&__upper,
 	&__lower {
 		font-family: "Raleway", sans-serif;
-		font-weight: bold;
+		font-weight: 600;
 		line-height: 1.25em;
 		color: $navy-blue;
 	}
@@ -121,6 +128,7 @@ body {
 			background-color: $navy-blue;
 			overflow: hidden;
 			transition: height 0.4s;
+			z-index: 999;
 
 			&__list {
 				display: block;
@@ -165,5 +173,29 @@ body {
 		.show-nav {
 			height: 450px;
 		}
+	}
+}
+
+.hero-image {
+	display: flex;
+	position: relative;
+	padding: 1.5em;
+	background-image: url("../img/header-img.jpg");
+	background-size: cover;
+	background-position: center;
+
+	.heading-title {
+		color: $creme-white;
+		z-index: 2;
+	}
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 1;
 	}
 }
