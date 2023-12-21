@@ -467,3 +467,15 @@ main {
 		}
 	}
 }
+
+.footer {
+	padding: 1em;
+	background-color: $navy-blue;
+
+	&__text {
+		font-family: "Raleway", sans-serif;
+		font-weight: 600;
+		color: $creme-white;
+		text-align: center;
+	}
+}
