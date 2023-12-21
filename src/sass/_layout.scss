@@ -349,4 +349,26 @@ main {
 			}
 		}
 	}
+
+	.gallery-servis {
+		margin-top: 2em;
+		overflow: hidden;
+		.wrapper {
+			.gallery-box {
+				margin-top: 2em;
+				justify-content: center;
+				align-items: center;
+				display: grid;
+				gap: 1.5em;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+
+				img {
+					width: 280px;
+					height: 280px;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+	}
 }
