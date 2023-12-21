@@ -113,6 +113,12 @@
 		.aboutme {
 			position: relative;
 
+			.wrapper {
+				.section-decoration {
+					display: block;
+				}
+			}
+
 			.honors-box {
 				margin-top: 2em;
 				grid-template-columns: repeat(3, 1fr);
