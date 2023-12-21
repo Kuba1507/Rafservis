@@ -354,6 +354,7 @@ main {
 	.gallery-servis {
 		position: relative;
 		margin-top: 2em;
+		padding-bottom: 4em;
 		overflow: hidden;
 
 		.wrapper {
@@ -385,13 +386,15 @@ main {
 	}
 
 	.contact {
-		margin-top: 2em;
-		padding-bottom: 2em;
-		background-color: $navy-blue;
+		// background-color: $navy-blue;
+		border-bottom: 1px solid #d9d9d9;
 
 		.wrapper {
 			.contact-box {
 				.contact-left {
+					padding-bottom: 2em;
+					background-color: $navy-blue;
+
 					.section-title {
 						padding: 1.5em 0 2em 0;
 						color: $creme-white;
@@ -438,7 +441,27 @@ main {
 				}
 
 				.contact-right {
+					position: relative;
 					display: none;
+					width: 50%;
+					background-image: url("../img/wood-4.jpeg");
+					background-size: cover;
+					background-position: center;
+
+					&__shadow {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background: rgb(0, 34, 68);
+						background: linear-gradient(
+							36deg,
+							rgba(0, 34, 68, 0.7931547619047619) 40%,
+							rgba(59, 85, 111, 0.8239670868347339) 70%,
+							rgba(118, 136, 154, 1) 100%
+						);
+					}
 				}
 			}
 		}

@@ -92,6 +92,7 @@
 				align-items: center;
 				justify-content: flex-end;
 				height: 100%;
+				border: none;
 				overflow: visible;
 
 				&__list {
@@ -214,6 +215,30 @@
 			.wrapper {
 				.gallery-box {
 					margin-top: 4em;
+				}
+			}
+		}
+
+		.contact {
+			margin-top: 4em;
+
+			.wrapper {
+				.contact-box {
+					display: flex;
+
+					.contact-left {
+						width: 50%;
+						border-top-left-radius: 10px;
+					}
+
+					.contact-right {
+						display: block;
+						border-top-right-radius: 10px;
+
+						&__shadow {
+							border-top-right-radius: 10px;
+						}
+					}
 				}
 			}
 		}
