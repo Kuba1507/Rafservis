@@ -124,6 +124,8 @@
 
 		.aboutme {
 			position: relative;
+			padding-top: 5em;
+			padding-bottom: 5em;
 
 			.wrapper {
 				.section-decoration {
@@ -164,8 +166,6 @@
 		}
 
 		.main-activities {
-			margin-top: 5em;
-
 			&-box {
 				justify-content: space-between;
 

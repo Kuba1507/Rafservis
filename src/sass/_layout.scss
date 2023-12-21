@@ -254,11 +254,10 @@ main {
 	.aboutme {
 		position: relative;
 		padding-top: 2em;
+		padding-bottom: 2em;
+		overflow: hidden;
 
 		.wrapper {
-			position: relative;
-			overflow: hidden;
-
 			.section-decoration {
 				display: none;
 				position: absolute;
@@ -267,14 +266,14 @@ main {
 				opacity: 0.02;
 
 				&--truck {
-					bottom: -5em;
-					left: -3em;
+					bottom: 2em;
+					left: 10em;
 					transform: rotate(-30deg);
 				}
 
 				&--wrench {
-					top: -1em;
-					right: -4em;
+					top: 0;
+					right: 12em;
 					transform: rotate(-90deg);
 				}
 			}
@@ -308,7 +307,6 @@ main {
 	}
 
 	.main-activities {
-		margin-top: 1.5em;
 		background-color: $navy-blue;
 
 		&-box {
