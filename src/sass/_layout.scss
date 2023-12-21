@@ -386,9 +386,6 @@ main {
 	}
 
 	.contact {
-		// background-color: $navy-blue;
-		border-bottom: 1px solid #d9d9d9;
-
 		.wrapper {
 			.contact-box {
 				.contact-left {
@@ -471,6 +468,7 @@ main {
 .footer {
 	padding: 1em;
 	background-color: $navy-blue;
+	border-top: 1px solid #d9d9d9;
 
 	&__text {
 		font-family: "Raleway", sans-serif;
