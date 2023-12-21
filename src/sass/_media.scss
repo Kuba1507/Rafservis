@@ -35,6 +35,18 @@
 				grid-template-rows: repeat(3, 1fr);
 			}
 		}
+
+		.main-activities {
+			&-box {
+				flex-direction: row;
+				justify-content: center;
+
+				&__element {
+					margin: 2.5em 1.5em 0 1.5em;
+					width: 25%;
+				}
+			}
+		}
 	}
 }
 
@@ -147,6 +159,18 @@
 							text-align: right;
 						}
 					}
+				}
+			}
+		}
+
+		.main-activities {
+			margin-top: 5em;
+
+			&-box {
+				justify-content: space-between;
+
+				&__element {
+					width: 22.5%;
 				}
 			}
 		}
