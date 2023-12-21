@@ -139,6 +139,7 @@ body {
 			height: 0;
 			width: 100vw;
 			background-color: $navy-blue;
+			border-bottom: 2px solid $cta-color;
 			overflow: hidden;
 			transition: height 0.4s;
 			z-index: 998;
@@ -378,6 +379,58 @@ main {
 					&:hover {
 						transform: scale(1.25);
 					}
+				}
+			}
+		}
+	}
+
+	.contact {
+		margin-top: 2em;
+		background-color: $navy-blue;
+
+		.wrapper {
+			.contact-box {
+				.contact-left {
+					.section-title {
+						padding: 1.5em 0 2em 0;
+						color: $creme-white;
+						font-weight: 300;
+					}
+
+					&__info {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						&-element {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-bottom: 2.75em;
+
+							img {
+								margin-bottom: 0.5em;
+								width: 55px;
+								height: 55px;
+							}
+
+							p {
+								font-family: "Open sans", sans-serif;
+								font-size: 1.8rem;
+								font-weight: 300;
+								color: $creme-white;
+								text-align: center;
+							}
+
+							.company-info {
+								margin: 0.25em 0;
+							}
+						}
+					}
+				}
+
+				.contact-right {
+					display: none;
 				}
 			}
 		}
