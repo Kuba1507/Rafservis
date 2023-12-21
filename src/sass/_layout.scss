@@ -386,6 +386,7 @@ main {
 
 	.contact {
 		margin-top: 2em;
+		padding-bottom: 2em;
 		background-color: $navy-blue;
 
 		.wrapper {
@@ -421,10 +422,17 @@ main {
 								color: $creme-white;
 								text-align: center;
 							}
+						}
+					}
 
-							.company-info {
-								margin: 0.25em 0;
-							}
+					&__company {
+						p {
+							margin: 0.5em 0;
+							font-family: "Open sans", sans-serif;
+							font-size: 1.8rem;
+							font-weight: 300;
+							color: $creme-white;
+							text-align: center;
 						}
 					}
 				}
