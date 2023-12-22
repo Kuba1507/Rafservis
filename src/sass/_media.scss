@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 @media (min-width: 768px) {
 	.header {
 		.wrapper {
@@ -245,7 +247,30 @@
 	}
 
 	.footer {
+		position: relative;
 		margin: 0 auto;
 		max-width: 1200px;
+
+		.author,
+		.email {
+			position: absolute;
+			top: 50%;
+			display: block;
+			font-family: "Raleway", sans-serif;
+			font-size: 1.4rem;
+			font-weight: 300;
+			transform: translateY(-50%);
+			color: white;
+		}
+
+		.author {
+			left: 0;
+			margin-left: 2em;
+		}
+
+		.email {
+			right: 0;
+			margin-right: 2em;
+		}
 	}
 }
