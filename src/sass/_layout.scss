@@ -485,3 +485,37 @@ main {
 		text-align: center;
 	}
 }
+
+//404.html
+
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 200px);
+	padding: 2em;
+
+	.error-text {
+		font-family: "Open sans", sans-serif;
+		font-size: 3rem;
+		text-align: center;
+	}
+}
+
+.footer-404 {
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto;
+	width: 100%;
+	padding: 1em;
+	background-color: $navy-blue;
+	border-top: 1px solid #d9d9d9;
+
+	.author {
+		display: none;
+	}
+
+	.email {
+		display: none;
+	}
+}
