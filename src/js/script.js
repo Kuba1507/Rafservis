@@ -3,6 +3,7 @@ const navbar = document.querySelector(".nav-bar");
 const navItemsList = document.querySelector(".nav-bar__list");
 const header = document.querySelector(".header");
 const navlinks = document.querySelectorAll(".navlink");
+const contactSection = document.getElementById("contact");
 const actualYear = document.querySelector(".year");
 
 const handleNav = () => {
@@ -13,6 +14,12 @@ const handleNav = () => {
 const closeNav = () => {
 	navbar.classList.remove("show-nav");
 	navItemsList.classList.remove("show-list");
+};
+
+const scrollToContact = () => {
+	if (contactSection) {
+		contactSection.scrollIntoView({ behavior: "smooth" });
+	}
 };
 
 const setCurrentYear = () => {
